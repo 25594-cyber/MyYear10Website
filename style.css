@@ -14,7 +14,25 @@ img {
     width: 100%;
 }
 
-/* The hero section styling- use your OWN Hero Image URL here */
+.topic-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Gives equal space between cards */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the whole container on the page */
+}
+
+.topic-card {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    min-width: 400px; /* Keeps all cards a uniform minimum width */
+    max-width: 500px; /* Prevents cards from getting too stretched on large screens */
+}/* The hero section styling- use your OWN Hero Image URL here */
 .hero {
     background-image: url( images/mywebsiteheader.png);
     height: 25vh;
@@ -33,6 +51,12 @@ img {
 .hero-text {
     font-size: 4em;
     font-weight: bold;
+}
+.hero-description {
+    font-size: 1.3em;
+    color:aliceblue;
+    margin-top: 12px;
+    text-align: center;
 }
 
 /* nice big font on a banner style background */
@@ -74,8 +98,30 @@ img {
 
 /* Styling for a footer section to take a bit of spcae at the bottom of the page */
 .footer{
-    background-color: rgb(71, 71, 71);
+    background-color: rgb(46, 46, 46);
     color: white;
     text-align: right;
     padding: 3em 3em;
+}
+/* General page styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; /* Dark theme looks very professional for portfolios */
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+
+
+/* Card hover effects */
+.topic-card {
+    background-color: #4d4b4b;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.topic-card:hover {
+    zoom: 1.02;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
